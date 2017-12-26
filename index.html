@@ -58,6 +58,7 @@
 <!--              <h1 class="brand-heading">Hello, I'm Johnny</h1>-->
                 <!-- Typeit magic happens in this <span> -->
                 <span class="type-it" style="font-size: 50px;"></span>
+                <span id="text-rotate"><div class="info">FULL-TIME STUDENT.</div> <div class="info">MOBILE DEVELOPER. </div> <div class="info">STUDENT WEB DEVELOPER. </div> <div class="info">TECH ENTHUSIAST. </div></span>
                 <br>
               <a href="#about" class="btn btn-circle js-scroll-trigger">
                 <i class="fa fa-angle-double-down animated"></i>
@@ -178,6 +179,47 @@
           loopDelay:3500
       });
     </script>
+      
+    <!-- Text rotation script for mobile devices -->
+    <script>
+    (function($){
+    $.fn.extend({ 
+        rotaterator: function(options) {
+ 
+            var defaults = {
+                fadeSpeed: 500,
+                pauseSpeed: 100,
+				child:null
+            };
+             
+            var options = $.extend(defaults, options);
+         
+            return this.each(function() {
+                  var o =options;
+                  var obj = $(this);                
+                  var items = $(obj.children(), obj);
+				  items.each(function() {$(this).hide();})
+				  if(!o.child){var next = $(obj).children(':first');
+				  }else{var next = o.child;
+				  }
+				  $(next).fadeIn(o.fadeSpeed, function() {
+						$(next).delay(o.pauseSpeed).fadeOut(o.fadeSpeed, function() {
+							var next = $(this).next();
+							if (next.length == 0){
+									next = $(obj).children(':first');
+							}
+							$(obj).rotaterator({child : next, fadeSpeed : o.fadeSpeed, pauseSpeed : o.pauseSpeed});
+						})
+					});
+                    });
+                }
+            });
+        })(jQuery);
+        
+        $(document).ready(function() {
+            $('#text-rotate').rotaterator({fadeSpeed:500, pauseSpeed:2500});
+        });
+    </script>  
 
   </body>
 

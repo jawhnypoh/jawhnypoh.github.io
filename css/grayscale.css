@@ -103,6 +103,14 @@ a {
     text-align: center;
 }
 
+.col-lg-8 #text-rotate {
+    display: none;
+}
+
+.col-lg-8 #text-rotate .info {
+    font-size: 25px;
+}
+
 .masthead {
   display: table;
   width: 100%;
@@ -130,7 +138,10 @@ a {
       .masthead .intro-body .brand-heading {
         font-size: 50px; }
       .masthead .intro-body .intro-text {
-        font-size: 22px; } }
+        font-size: 22px; } 
+    .col-lg-8 .type-it {
+          font-size: 20px;
+      }}
 
 .masthead .intro-body .container {
     padding-left: 10px;
@@ -168,6 +179,7 @@ a {
   background-size: cover; }
 
 .projects-wrapper {
+    //display: flex;
     overflow: auto;
 }
 
@@ -178,7 +190,7 @@ a {
     padding: 10px;
     width: 250px;
     height: 300px;
-    color: #383838;
+    color: #606060;
     background: white;
 }
 
@@ -247,7 +259,15 @@ ul.banner-social-buttons {
         margin-bottom: 0; } 
       #about .avatar {
           display: none;
-      }}
+      }
+      .col-lg-8 .type-it {
+          display: none;
+      }
+      
+      .col-lg-8 #text-rotate {
+          display: block;
+      }
+    }
 
 footer {
   padding: 50px 0; }
