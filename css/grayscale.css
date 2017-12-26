@@ -178,13 +178,9 @@ a {
   -o-background-size: cover;
   background-size: cover; }
 
-.projects-wrapper {
-    //display: flex;
-    overflow: auto;
-}
-
 .projects-wrapper .item-container {
     display: inline-block;
+    position: relative;
     overflow: hidden;
     margin: 10px;
     padding: 10px;
@@ -192,14 +188,23 @@ a {
     height: 300px;
     color: #606060;
     background: white;
-}
-
-.projects-wrapper .item-container:hover {
-    box-shadow: 5px 10px 10px;
     transition-duration: 0.5s;
 }
 
-.wip-span {
+.projects-wrapper .item-container:hover {
+    box-shadow: 5px 5px 10px;
+    transition-duration: 0.5s;
+}
+
+.projects-wrapper .item-container .item-link {
+    position: absolute;
+    bottom: 15px;
+    left: 20%;
+    right: 20%;
+}
+
+
+.progress-span {
     background-color: #FF7F50;
     color: white;
     font-size: 12px;
@@ -292,4 +297,4 @@ img::-moz-selection {
   background: transparent; }
 
 body {
-  -webkit-tap-highlight-color: rgba(255, 255, 255, 0.2); }
+-webkit-tap-highlight-color: rgba(255, 255, 255, 0.2); }
