@@ -340,6 +340,15 @@ p.job-info {
   text-align: left;
 }
 
+.date {
+  float: right;
+  background-color: #FF7F50;
+  color: white;
+  font-size: 12px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
 
 #map {
   width: 100%;
