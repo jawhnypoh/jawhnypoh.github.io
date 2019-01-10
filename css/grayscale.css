@@ -246,6 +246,7 @@ a {
   padding-top: 150px;
   padding-bottom: 150px; }
 
+  /* Projects Section CSS */
 .projects-section {
   color: white;
   background-color: #3f3f3f;
@@ -279,7 +280,6 @@ a {
     right: 20%;
 }
 
-
 .progress-span {
     background-color: #FF7F50;
     color: white;
@@ -287,6 +287,59 @@ a {
     padding: 5px;
     border-radius: 5px;
 }
+
+/* Work Section CSS */
+.work-section {
+  color: white;
+  background-color: #616161;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+.work-wrapper .item-container {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    margin: 20px;
+    padding: 10px;
+    /* height: 300px; */
+    color: #606060;
+    background: white;
+    transition-duration: 0.5s;
+}
+
+.work-wrapper .item-container:hover {
+    box-shadow: 5px 5px 10px;
+    transition-duration: 0.5s;
+}
+
+.work-wrapper .item-container .item-link {
+    position: absolute;
+    bottom: 15px;
+    left: 20%;
+    right: 20%;
+}
+
+h3.job-title {
+  margin: 0;
+  text-align: left;
+}
+
+li {
+  text-align: left;
+}
+
+h5.job-hire {
+  text-align: left;
+  margin-left: 5px;
+  margin-bottom: 10px;
+}
+
+p.job-info {
+  text-align: left;
+}
+
 
 #map {
   width: 100%;
