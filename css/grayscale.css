@@ -368,7 +368,7 @@ p.job-info {
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   text-transform: uppercase;
-  border-radius: 0; }
+  border-radius: 5; }
 
 .btn-default {
   color: #FF7F50;
